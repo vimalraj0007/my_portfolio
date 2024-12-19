@@ -707,7 +707,7 @@ services__title{
 /* Define styles that work for small devices by default. */
 
 /* Small devices (max-width: 576px) */
-@media (max-width: 576px) {
+@media only screen and (max-width: 626px) {
     .nav__menu {
       flex-direction: column;
       align-items: center;
@@ -716,6 +716,7 @@ services__title{
     .home__container {
       grid-template-columns: 1fr;
       text-align: center;
+      row-gap: 1.875rem;
     }
   
     .home__img {
@@ -729,6 +730,7 @@ services__title{
   
     .skills__container {
       grid-template-columns: 1fr;
+      row-gap: 1.875rem;
     }
   
     .resume__container {
@@ -768,8 +770,8 @@ services__title{
     
   }
   
-  /* Medium devices (min-width: 577px and max-width: 768px) */
-  @media (min-width: 577px) and (max-width: 768px) {
+  /* Medium devices (min-width: 577px and max-width: 768px)
+  @media (min-width: 627px) and (max-width: 888px) {
     .nav__menu {
       flex-direction: row;
       justify-content: center;
@@ -792,12 +794,12 @@ services__title{
   
     .contact__container {
       grid-template-columns: 1fr;
-    }
-  }
+    } */
+
   
   /* Large devices (min-width: 769px and max-width: 992px) */
-  @media (min-width: 769px) and (max-width: 992px) {
-    .nav__menu {
+  @media only screen and (min-width: 627px) and (max-width: 992px) {
+    /* .nav__menu {
       justify-content: space-between;
     }
   
@@ -817,8 +819,31 @@ services__title{
   
     .contact__container {
       grid-template-columns: repeat(2, 1fr);
-    }
-    .project__item {
+    } */
+    .nav__menu {
+        flex-direction: row;
+        justify-content: center;
+      }
+    
+      .home__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    
+      .services__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    
+      .skills__container,
+      .resume__container {
+        grid-template-columns: 1fr 1fr;
+      }
+    
+      .contact__container {
+        grid-template-columns: 1fr;
+      } 
+        .project__item {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
       }
@@ -847,7 +872,10 @@ services__title{
       }
   }
   
-  /* Extra Large devices (min-width: 993px) */
+
+
+  
+  /* Extra Large devices (min-width: 993px)
   @media (min-width: 993px) {
     .nav__menu {
       justify-content: flex-end;
@@ -898,5 +926,5 @@ services__title{
         font-size: 14px;
       }
     
-  }
+  } */
   
