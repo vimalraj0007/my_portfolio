@@ -703,4 +703,200 @@ services__title{
 }
 
 
+/* Base Styles (Mobile-First Design) */
+/* Define styles that work for small devices by default. */
 
+/* Small devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .nav__menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home__container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .home__img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .services__container {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills__container {
+      grid-template-columns: 1fr;
+    }
+  
+    .resume__container {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact__container {
+      grid-template-columns: 1fr;
+    }
+    .project__item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .project__img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      .project__data {
+        padding: 10px;
+      }
+      .project__title {
+        font-size: 16px;
+      }
+      .project__description {
+        font-size: 12px;
+      }
+      .project__stack {
+        font-size: 10px;
+      }
+      .tags {
+        font-size: 10px;
+      }
+      .project__link {
+        font-size: 10px;
+      }
+    
+  }
+  
+  /* Medium devices (min-width: 577px and max-width: 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .nav__menu {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .home__container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .services__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  
+    .skills__container,
+    .resume__container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .contact__container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Large devices (min-width: 769px and max-width: 992px) */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .nav__menu {
+      justify-content: space-between;
+    }
+  
+    .home__container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .services__container {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+    }
+  
+    .skills__container,
+    .resume__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .contact__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .project__item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .project__img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .project__data {
+        padding: 20px;
+      }
+      .project__title {
+        font-size: 18px;
+      }
+      .project__description {
+        font-size: 14px;
+      }
+      .project__stack {
+        font-size: 12px;
+      }
+      .tags {
+        font-size: 12px;
+      }
+      .project__link {
+        font-size: 12px;
+      }
+  }
+  
+  /* Extra Large devices (min-width: 993px) */
+  @media (min-width: 993px) {
+    .nav__menu {
+      justify-content: flex-end;
+    }
+  
+    .home__container {
+      grid-template-columns: 1.5fr 1fr;
+    }
+  
+    .services__container {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+  
+    .skills__container,
+    .resume__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .contact__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .project__item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .project__img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .project__data {
+        padding: 20px;
+      }
+      .project__title {
+        font-size: 20px;
+      }
+      .project__description {
+        font-size: 16px;
+      }
+      .project__stack {
+        font-size: 14px;
+      }
+      .tags {
+        font-size: 14px;
+      }
+      .project__link {
+        font-size: 14px;
+      }
+    
+  }
+  
