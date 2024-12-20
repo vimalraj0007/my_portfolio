@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>vimal portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/skins/color-1.css"  class="alternate-style" title="color-1" disabled/>
+    <link rel="stylesheet" href="./assets/skins/color-2.css"  class="alternate-style" title="color-2" disabled/>
+    <link rel="stylesheet" href="./assets/skins/color-2.css" />
 </head>
 <body>
 
@@ -15,12 +18,22 @@
          <nav class="nav container">
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li><a href="#home" class="nav__link active-link">Hello</a></li>
-                    <li><a href="#home" class="nav__link">service</a></li>
-                    <li><a href="#resume" class="nav__link">Resume</a></li>
-                    <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li><a href="#blog" class="nav__link">Blog</a></li>
-                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                    <li>
+                        <a href="#home" class="nav__link active-link">Hello</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav__link">service</a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="nav__link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <!-- <li><a href="#blog" class="nav__link">Blog</a></li> -->
+                    <li>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
                 </ul>
 
                 <div class="nav__close" id="nav-close">
@@ -467,6 +480,21 @@
               
             </section>
     </main>
+
+    <!-- style switcher -->
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler ">
+            <i class="ri-settings-4-fill"></i>
+        </div>
+
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        </div>
+
+
+    </div>
 
     <!-- email js -->
     <script
